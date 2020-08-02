@@ -19,11 +19,11 @@ static void notifyCallback(
   size_t length,
   bool isNotify) {
 //  Serial.print("Notify callback for characteristic ");
-  for (int i = 0; i < length; i++) {
-    Serial.print(pData[i]);
-    Serial.print(" ");
-  }
-  Serial.println();
+//  for (int i = 0; i < length; i++) {
+//    Serial.print(pData[i]);
+//    Serial.print(" ");
+//  }
+  Serial.println(pData[1]);
 }
 
 bool connectToServer(BLEAddress pAddress) {
