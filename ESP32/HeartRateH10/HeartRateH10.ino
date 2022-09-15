@@ -83,6 +83,7 @@ class MyAdvertisedDeviceCallbacks: public BLEAdvertisedDeviceCallbacks {
         advertisedDevice.getScan()->stop();
 
         pServerAddress = new BLEAddress(advertisedDevice.getAddress());
+        Serial.println(pServerAddress->toString().c_str());
         doConnect = true;
 
       } // Found our server
